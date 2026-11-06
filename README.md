@@ -10,6 +10,7 @@ Live at **https://diogofreire.is-a.dev/** (custom domain from [is-a.dev](https:/
 - No third-party requests (no web fonts, analytics or CDNs). That keeps the page fast and lets the Content Security Policy in `index.html` allow only `'self'`.
 - Light and dark themes follow the visitor's system setting through `prefers-color-scheme`.
 - `.nojekyll` tells GitHub Pages to skip Jekyll, since there is nothing for it to build.
+- Skill logos in `assets/icons/` come from [Simple Icons](https://simpleicons.org/) (CC0); the generic ones (database, cloud, lock, key, flag) are drawn by hand.
 
 ## Run it locally
 

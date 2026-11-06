@@ -161,21 +161,6 @@ h3 { margin: 0 0 .5rem; font-size: 1.3rem; }
 .ticks li { margin-bottom: .5rem; }
 .ticks li::marker { content: "▸ "; color: var(--accent); }
 
-.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 1.25rem; }
-.card {
-  --c: var(--accent);
-  display: flex; flex-direction: column;
-  background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 1.5rem;
-  border-left: 4px solid var(--c);
-}
-.card p:not(.tag) { color: var(--muted); flex: 1; margin: 0 0 1rem; }
-.card .tag { color: var(--c); }
-.c-teal { --c: var(--teal); }
-.c-green { --c: var(--green); }
-.c-amber { --c: var(--amber); }
-.c-violet { --c: var(--violet); }
-.more { font-weight: 600; text-decoration: none; color: var(--c); }
-.more:hover { text-decoration: underline; }
 
 .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.75rem 2.5rem; }
 .skills h3 { font-size: 1rem; }
@@ -189,7 +174,7 @@ h3 { margin: 0 0 .5rem; font-size: 1.3rem; }
 
 @media (max-width: 760px) {
   .hero { padding: 3.5rem 0 2.5rem; }
-  .feature, .grid, .skills, .gallery { grid-template-columns: 1fr; }
+  .feature, .skills, .gallery { grid-template-columns: 1fr; }
   .gallery { grid-template-rows: auto; }
   .gallery .main { grid-row: auto; }
   .feature { padding: 1rem; }
@@ -207,3 +192,36 @@ h3 { margin: 0 0 .5rem; font-size: 1.3rem; }
 .dots i:nth-child(2) { background: #febc2e; }
 .dots i:nth-child(3) { background: #28c840; }
 .term .skills { padding: 1.5rem; }
+
+/* Skill logos: each SVG is used as a mask, so its colour comes from CSS and follows the theme.
+   Brand logos are from Simple Icons (CC0); the generic ones are drawn by hand. */
+.chips li { display: inline-flex; align-items: center; gap: .4rem; }
+.ic { width: 1em; height: 1em; flex: none; background: var(--ic, var(--muted)); -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; }
+.ic-php { --m: url("assets/icons/php.svg"); --ic: #777BB4; }
+.ic-javascript { --m: url("assets/icons/javascript.svg"); --ic: #F7DF1E; }
+.ic-typescript { --m: url("assets/icons/typescript.svg"); --ic: #3178C6; }
+.ic-python { --m: url("assets/icons/python.svg"); --ic: #3776AB; }
+.ic-dart { --m: url("assets/icons/dart.svg"); --ic: #0175C2; }
+.ic-c { --m: url("assets/icons/c.svg"); --ic: #A8B9CC; }
+.ic-vuedotjs { --m: url("assets/icons/vuedotjs.svg"); --ic: #4FC08D; }
+.ic-ionic { --m: url("assets/icons/ionic.svg"); --ic: #3880FF; }
+.ic-flutter { --m: url("assets/icons/flutter.svg"); --ic: #02569B; }
+.ic-bootstrap { --m: url("assets/icons/bootstrap.svg"); --ic: #7952B3; }
+.ic-git { --m: url("assets/icons/git.svg"); --ic: #F03C2E; }
+.ic-githubactions { --m: url("assets/icons/githubactions.svg"); --ic: #2088FF; }
+.ic-ubuntu { --m: url("assets/icons/ubuntu.svg"); --ic: #E95420; }
+.ic-apache { --m: url("assets/icons/apache.svg"); --ic: #D22128; }
+.ic-mysql { --m: url("assets/icons/mysql.svg"); --ic: #4479A1; }
+.ic-firebase { --m: url("assets/icons/firebase.svg"); --ic: #DD2C00; }
+.ic-gnu { --m: url("assets/icons/gnu.svg"); --ic: #A42E2B; }
+.ic-threedotjs { --m: url("assets/icons/threedotjs.svg"); }
+.ic-mariadb { --m: url("assets/icons/mariadb.svg"); }
+.ic-owasp { --m: url("assets/icons/owasp.svg"); }
+.ic-sql { --m: url("assets/icons/sql.svg"); }
+.ic-cloud { --m: url("assets/icons/cloud.svg"); }
+.ic-lock { --m: url("assets/icons/lock.svg"); }
+.ic-key { --m: url("assets/icons/key.svg"); }
+.ic-flag { --m: url("assets/icons/flag.svg"); }
+/* Pale brand colours lose contrast on the light chips, so they get a darker shade there. */
+@media (prefers-color-scheme: light) { .ic-javascript { --ic: #c9a900; } .ic-c { --ic: #5c6f8a; } }
+@media (prefers-color-scheme: dark) { .ic-flutter { --ic: #44a1f2; } .ic-gnu { --ic: #d8574f; } }

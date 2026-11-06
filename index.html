@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Diogo Freire · Developer &amp; cybersecurity student</title>
-  <meta name="description" content="Diogo Freire, a cybersecurity student at ISTEC (Portugal) who builds web and mobile apps. Projects include Finora, a personal finance app hardened against the OWASP Top 10.">
+  <meta name="description" content="Diogo Freire, a cybersecurity student at ISTEC (Portugal) who builds web and mobile apps. His main project is Finora, a personal finance app hardened against the OWASP Top 10.">
   <meta name="theme-color" content="#0f1b33">
   <meta property="og:title" content="Diogo Freire · Developer & cybersecurity student">
   <meta property="og:description" content="Web and mobile projects, with security built in from the start.">
@@ -25,7 +25,7 @@
     <nav class="wrap nav" aria-label="Main">
       <a class="brand" href="#top" aria-label="Diogo Freire, home"><span aria-hidden="true">df</span><span class="cursor" aria-hidden="true">_</span></a>
       <ul>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#projects">Project</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -38,7 +38,7 @@
       <h1>Diogo Freire</h1>
       <p class="lead">I build web and mobile apps and I'm studying cybersecurity at <strong>ISTEC</strong> (CTeSP). I like taking a project all the way: from the database and the code to the server it runs on, and then trying to break it.</p>
       <div class="cta">
-        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn primary" href="#projects">See my project</a>
         <a class="btn" href="https://github.com/diogofreire-dev" rel="me">GitHub profile</a>
       </div>
       <ul class="facts" aria-label="Quick facts">
@@ -49,8 +49,8 @@
     </section>
 
     <section class="wrap" id="projects" aria-labelledby="projects-title">
-      <p class="prompt" aria-hidden="true"><span class="user">diogo@portugal</span>:<span class="path">~</span>$ ls ~/projects</p>
-      <h2 id="projects-title">Projects</h2>
+      <p class="prompt" aria-hidden="true"><span class="user">diogo@portugal</span>:<span class="path">~</span>$ cd ~/projects/finora</p>
+      <h2 id="projects-title">Project</h2>
 
       <article class="feature">
         <div class="gallery">
@@ -67,11 +67,11 @@
           </figure>
         </div>
         <div class="feature-intro">
-          <p class="tag">Featured · PHP · MariaDB · JavaScript</p>
+          <p class="tag">PHP · MariaDB · JavaScript</p>
           <h3>Finora</h3>
           <p>A personal finance web app: cards, spending, budgets, payment reminders, savings goals and a tracker for investments. It started as my final school project (PAP) with my classmate Jandro Antunes, who led the UI/UX design, and I kept working on it as a portfolio and security project.</p>
           <div class="links">
-            <a class="btn primary" href="https://finora.spaincentral.cloudapp.azure.com/site/">Live site</a>
+            <a class="btn primary" href="https://finora.diogofreire.is-a.dev/">Live site</a>
             <a class="btn" href="https://github.com/diogofreire-dev/Finora">Source code</a>
           </div>
         </div>
@@ -85,32 +85,6 @@
         </div>
       </article>
 
-      <div class="grid">
-        <article class="card c-teal">
-          <p class="tag">Flutter · Dart · Firebase</p>
-          <h3>STRK</h3>
-          <p>A habit tracker built around streaks. Firebase keys stay out of the repo and are rebuilt from GitHub Secrets in CI, which runs <code>flutter analyze</code> and the tests on every push.</p>
-          <a class="more" href="https://github.com/diogofreire-dev/STRK">View on GitHub <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card c-green">
-          <p class="tag">Ionic · Vue 3 · TypeScript</p>
-          <h3>Rick and Morty Explorer</h3>
-          <p>A hybrid mobile app that consumes the Rick and Morty API: character search, detail views, episodes grouped by season and pull to refresh, packaged with Capacitor.</p>
-          <a class="more" href="https://github.com/diogofreire-dev/RickAndMorty">View on GitHub <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card c-amber">
-          <p class="tag">C · gdb</p>
-          <h3>learning-c</h3>
-          <p>My path through C for cybersecurity: pointers, <code>malloc</code>/<code>free</code> and memory errors, then reading the Assembly and stepping through programs with gdb.</p>
-          <a class="more" href="https://github.com/diogofreire-dev/learning-c">View on GitHub <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card c-violet">
-          <p class="tag">Python · CS50P</p>
-          <h3>learning-with-python</h3>
-          <p>Exercises, notes and small projects from Harvard's CS50 Python course, kept as a record of how I learned loops, functions and working with data.</p>
-          <a class="more" href="https://github.com/diogofreire-dev/learning-with-python">View on GitHub <span aria-hidden="true">→</span></a>
-        </article>
-      </div>
     </section>
 
     <section class="wrap" id="skills" aria-labelledby="skills-title">
@@ -121,19 +95,19 @@
       <div class="skills">
         <div>
           <h3>Languages</h3>
-          <ul class="chips"><li>PHP</li><li>JavaScript</li><li>TypeScript</li><li>Python</li><li>Dart</li><li>C</li><li>SQL</li></ul>
+          <ul class="chips"><li><i class="ic ic-php" aria-hidden="true"></i>PHP</li><li><i class="ic ic-javascript" aria-hidden="true"></i>JavaScript</li><li><i class="ic ic-typescript" aria-hidden="true"></i>TypeScript</li><li><i class="ic ic-python" aria-hidden="true"></i>Python</li><li><i class="ic ic-dart" aria-hidden="true"></i>Dart</li><li><i class="ic ic-c" aria-hidden="true"></i>C</li><li><i class="ic ic-sql" aria-hidden="true"></i>SQL</li></ul>
         </div>
         <div>
           <h3>Frameworks &amp; tools</h3>
-          <ul class="chips"><li>Vue 3</li><li>Ionic</li><li>Flutter</li><li>Bootstrap</li><li>three.js</li><li>Git &amp; GitHub Actions</li></ul>
+          <ul class="chips"><li><i class="ic ic-vuedotjs" aria-hidden="true"></i>Vue 3</li><li><i class="ic ic-ionic" aria-hidden="true"></i>Ionic</li><li><i class="ic ic-flutter" aria-hidden="true"></i>Flutter</li><li><i class="ic ic-bootstrap" aria-hidden="true"></i>Bootstrap</li><li><i class="ic ic-threedotjs" aria-hidden="true"></i>three.js</li><li><i class="ic ic-git" aria-hidden="true"></i>Git</li><li><i class="ic ic-githubactions" aria-hidden="true"></i>GitHub Actions</li></ul>
         </div>
         <div>
           <h3>Servers &amp; data</h3>
-          <ul class="chips"><li>Linux (Ubuntu)</li><li>Apache</li><li>MariaDB / MySQL</li><li>Azure VMs</li><li>Firebase</li></ul>
+          <ul class="chips"><li><i class="ic ic-ubuntu" aria-hidden="true"></i>Linux (Ubuntu)</li><li><i class="ic ic-apache" aria-hidden="true"></i>Apache</li><li><i class="ic ic-mariadb" aria-hidden="true"></i>MariaDB</li><li><i class="ic ic-mysql" aria-hidden="true"></i>MySQL</li><li><i class="ic ic-cloud" aria-hidden="true"></i>Azure VMs</li><li><i class="ic ic-firebase" aria-hidden="true"></i>Firebase</li></ul>
         </div>
         <div>
           <h3>Security</h3>
-          <ul class="chips"><li>OWASP Top 10</li><li>Secure session handling</li><li>Secrets management</li><li>gdb &amp; memory bugs</li><li>OverTheWire</li></ul>
+          <ul class="chips"><li><i class="ic ic-owasp" aria-hidden="true"></i>OWASP Top 10</li><li><i class="ic ic-lock" aria-hidden="true"></i>Secure session handling</li><li><i class="ic ic-key" aria-hidden="true"></i>Secrets management</li><li><i class="ic ic-gnu" aria-hidden="true"></i>gdb &amp; memory bugs</li><li><i class="ic ic-flag" aria-hidden="true"></i>OverTheWire</li></ul>
         </div>
       </div>
       </div>
