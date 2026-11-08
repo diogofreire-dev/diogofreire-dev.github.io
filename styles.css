@@ -196,6 +196,9 @@ h3 { margin: 0 0 .5rem; font-size: 1.3rem; }
 /* Skill logos: each SVG is used as a mask, so its colour comes from CSS and follows the theme.
    Brand logos are from Simple Icons (CC0); the generic ones are drawn by hand. */
 .chips li { display: inline-flex; align-items: center; gap: .4rem; }
+.chips a { display: inline-flex; align-items: center; gap: .4rem; color: inherit; text-decoration: none; }
+.chips li:has(a):hover { border-color: var(--accent); }
+.skills .study { grid-column: 1 / -1; }
 .ic { width: 1em; height: 1em; flex: none; background: var(--ic, var(--muted)); -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; }
 .ic-php { --m: url("assets/icons/php.svg"); --ic: #777BB4; }
 .ic-javascript { --m: url("assets/icons/javascript.svg"); --ic: #F7DF1E; }
